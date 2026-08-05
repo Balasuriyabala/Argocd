@@ -29,9 +29,9 @@ spec:
                   name: mongo-secret
                   key: password
           volumeMounts:
-            - name: mongo-data
+            - name: mongodb-data
               mountPath: /data/db
       volumes:
-        - name: mongo-storage
+        - name: mongodb-storage
           persistentVolumeClaim:
             claimName: mongodb-pvc
